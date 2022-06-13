@@ -1,0 +1,39 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 80px;
+  border-bottom: solid 2px #f9f9f9;
+}
+
+header img {
+  width: 150px;
+}
+
+header nav {
+  display: flex;
+  gap: 20px;
+}
+
+.burger {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  header {
+    position: relative;
+    justify-content: center;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    width: 30px;
+    position: absolute;
+    top: calc(50% - 15px);
+    right: 10px;
+  }
+}
